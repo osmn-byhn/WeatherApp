@@ -16,7 +16,11 @@
   function showPosition(position) {
       latitude.value = position.coords.latitude
       longitude.value = position.coords.longitude
-      console.log(latitude.value + "-" + longitude.value);
+      axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${latitude.value}&longitude=${longitude.value}&current_weather=true&timezone=GMT&daily=temperature_2m_max`)
+      .then(function (response) {
+        console.log(response.data);
+      })
+      .catch(err=> console.log(err))
   }
 
   function getLocation() {
@@ -27,24 +31,6 @@
       console.log(cordinate);
       }
   }
-
-   /*
-  function getCordinate() {
-    axios.get(`https://api.api-ninjas.com/v1/geocoding?city=${city.value}`, config)
-      .then(function (res) {
-        console.log(res.data[0].latitude);
-      })
-      .catch(err=> console.log(err))
-  }
-
-  
-
-  axios.get('https://api.open-meteo.com/v1/forecast?latitude=34.3925639&longitude=-100.8976408&current_weather=true&timezone=GMT&daily=temperature_2m_max')
-  .then(function (res) {
-      console.log(res.data);
-    })
-  .catch(err=> console.log(err))
-*/
 
   
   function getCordinate() {
