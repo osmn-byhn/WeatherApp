@@ -1,0 +1,23 @@
+.content {
+    width: 30%;
+    .search {
+        width: 100%;
+        input {
+            width: 80%;
+            height: 40px;
+            outline: none;
+        }
+        i {
+            padding: 10px;
+            margin-left: 1%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .bi-search {
+            background-color: #FCB100;
+        }
+        .bi-geo-alt-fill {
+            background-color: #00FF15;
+        }
+    }
+}
