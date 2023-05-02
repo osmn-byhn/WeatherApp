@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Neucha&display=swap');
+nav {
+    ul {
+        justify-content: space-between;
+        li {
+            display: flex;
+            justify-content: space-between;
+            h1 {
+                a {
+                    text-decoration: none;
+                    font-family: 'Alkatra', cursive;
+                }
+            }
+            ul {
+                display: flex;
+                margin-top: 1%;
+                li {
+                    i {
+                        font-size: 25px;
+                        margin-right: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

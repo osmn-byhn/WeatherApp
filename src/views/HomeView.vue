@@ -1,6 +1,7 @@
 <script setup>
   import axios from "axios"
   import { ref, onMounted } from 'vue'
+  import Navbar from "../components/desktop/Navbar.vue";
   import { useAPIStore } from '../stores/api-store'
   const store = useAPIStore()
 
@@ -12,6 +13,7 @@
 </script>
 
 <template>
+  <Navbar />
   <!--
   <div class="content">
     <h1>Weather for {{ store.city }}</h1>
@@ -22,9 +24,9 @@
 
   </div>
   -->
-  <h1>Deneme</h1>
+  
 </template>
 
 <style scoped lang="scss">
-  @import '../../public/styles/HomeView.scss';
+  @import '../../public/styles/views/HomeView.scss';
 </style>
