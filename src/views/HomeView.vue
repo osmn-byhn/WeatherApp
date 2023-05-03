@@ -2,6 +2,7 @@
   import axios from "axios"
   import { ref, onMounted } from 'vue'
   import Navbar from "../components/desktop/Navbar.vue";
+  import City from "../components/City.vue";
   import { useAPIStore } from '../stores/api-store'
   const store = useAPIStore()
 
@@ -14,6 +15,8 @@
 
 <template>
   <Navbar />
+  <City />
+
   <!--
   <div class="content">
     <h1>Weather for {{ store.city }}</h1>

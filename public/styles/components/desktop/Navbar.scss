@@ -6,6 +6,7 @@ nav {
             display: flex;
             justify-content: space-between;
             h1 {
+                margin-top: 1.5%;
                 a {
                     text-decoration: none;
                     font-family: 'Alkatra', cursive;
@@ -13,7 +14,7 @@ nav {
             }
             ul {
                 display: flex;
-                margin-top: 1%;
+                margin-top: 2%;
                 li {
                     i {
                         font-size: 25px;
