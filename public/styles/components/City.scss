@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Kalam:wght@300&display=swap');
-h1 {
-    font-family: 'Kalam', cursive;
+.content {
+    width: 40%;
+    margin-left: 10%;
+    ul {
+        width: 100%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                list-style: none;
+                display: flex;
+            }
+        }
+    }
 }
