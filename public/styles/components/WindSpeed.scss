@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Kalam:wght@300&display=swap');
-.city-content {
+.wind-content {
     width: 40%;
     height: 30vh;
     margin-left: 5%;
@@ -8,24 +8,12 @@
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 30px;
-    margin-top: 8vh;
-    .city {
-        padding-top: 5vh;
-    }
-    .weather-status {
-        li  {
-            i {
-                font-size: 75px;
-            }
-            h2 {
-                margin-top: 40%;
-            }
-        }
-    }
+    margin-top: 5vh;
     ul {
         display: flex;
         justify-content: space-between;
         padding-right: 5%;
+        padding-top: 15%;
         li {
             color: white;
             list-style: none;
@@ -34,6 +22,11 @@
             }
             .bi-bookmark-plus-fill {
                 cursor: pointer;
+            }
+        }
+        .value-class {
+            h2 {
+                display: inline;
             }
         }
     }

@@ -3,18 +3,20 @@
   import { ref, onMounted } from 'vue'
   import Navbar from "../components/desktop/Navbar.vue";
   import City from "../components/City.vue";
+  import WindSpeed from "../components/WindSpeed.vue";
   import { useAPIStore } from '../stores/api-store'
   const store = useAPIStore()
   onMounted(() => {
     store.getLocation()
   })
 
-  
+
 </script>
 
 <template>
   <Navbar />
   <City />
+  <WindSpeed />
 
   <!--
   <div class="content">
