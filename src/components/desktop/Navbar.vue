@@ -29,5 +29,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '../../../public/styles/components/desktop/Navbar.scss'
+    @import '../../../public/styles/desktop/Navbar.scss'
 </style>

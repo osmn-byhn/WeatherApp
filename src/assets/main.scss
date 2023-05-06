@@ -1,12 +1,16 @@
-/*#theme {
-    background-color: #040800;
-}*/
+/*
 #theme-background {
-    background-image: url('../../public/images/lg.jpg');
-        /* Full height */
+    background-image: url('../../public/images/mobile/foggy-mobile.jpg');
     height: 100%; 
-    /* Center and scale the image nicely */
+    margin-top: 100vh;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+}*/
+#theme-background { 
+    background: url('../../public/images/desktop/sunny-desktop.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }

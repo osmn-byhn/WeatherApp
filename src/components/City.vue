@@ -4,14 +4,16 @@
 </script>
 
 <template>
-    <div class="content">
-        <ul>
+    <div class="city-content">
+        <ul class="city">
             <li>
                 <h1>{{ store.city }}</h1>
             </li>
             <li>
-                <i class="fa-solid fa-plus"></i>
+                <i class="bi bi-bookmark-plus-fill"></i>
             </li>
+        </ul>
+        <ul class="weather-status">
             <li>
                 <i :class="store.weatherIcon"></i>
             </li>

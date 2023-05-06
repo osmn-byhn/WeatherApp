@@ -5,7 +5,6 @@
   import City from "../components/City.vue";
   import { useAPIStore } from '../stores/api-store'
   const store = useAPIStore()
-
   onMounted(() => {
     store.getLocation()
   })
@@ -24,7 +23,6 @@
       <input type="search" name="" id="" placeholder="Country or city" v-model="store.city">
       <i class="bi bi-search" @click="store.getCordinate()"></i>
     </div>
-
   </div>
   -->
   
